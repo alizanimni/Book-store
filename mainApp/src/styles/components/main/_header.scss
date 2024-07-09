@@ -1,0 +1,73 @@
+.header{
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+     padding: 1rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: $myBlack;
+    button{
+        background-color: $myBlack;
+        border: none;
+    }
+
+    
+    .logo{
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        text-decoration: none;
+        @media screen and (max-width:555px) {
+            font-size: 1.2rem;
+    }
+    }
+    .icons_div{
+        color:  white;
+        margin-left: 3rem;
+        cursor: pointer;
+        @media screen and (max-width:555px) {
+            margin-left: 1.4rem;
+    }
+     
+    }
+}
+ .menu{
+    position: absolute;
+    right: 0;
+    top:4rem;
+    color: white;
+    background-color: rgb(52, 52, 111);
+    div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;  
+    width: 200px;
+    height: 50px;  
+    cursor: pointer;    
+    }
+
+     }
+     .header_price{
+        color: $myBlue;
+        font-weight: 700;
+        position: absolute;
+        left: 10px;
+        top: 25px;       
+         @media screen and (max-width:555px) {
+            font-size: 0.8rem;
+            left: 0px;
+            top: 30px;  
+    }
+     }
+     .hello{
+        color: white;
+        @media screen and (max-width:555px) {
+            font-size: 0.7rem;
+    }
+     }

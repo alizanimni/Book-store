@@ -1,0 +1,74 @@
+.subscribe_container{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.subscribe_modal{
+     width: 400px;
+     height: 500px;
+     background-color: $myBlack;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  border-radius: 10px;
+}
+.login-form{
+    color: white;
+    label{
+        color: white;
+        font-size: 1rem;
+        
+    }
+    h3 {
+        text-align: center;
+        color: $myBlue;
+      }
+    
+      input {
+        display: flex;
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid $myBlue;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    
+        &:focus {
+          outline: none;
+        }
+      }
+    
+      button {
+        display: block;
+        padding: 0.5rem;
+        background: $myBlue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    
+        &:disabled {
+          background: #ccc;
+          cursor: not-allowed;
+        }
+      }
+}
+.login-form__nav {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  
+    div {
+      font-size: 0.75rem;
+      align-self: flex-end;
+      text-decoration: underline;
+      color: $myBlue;
+    }
+  }
+.invalid-message{
+    width: 250px;
+    color: $myRed;
+    font-size: 0.75rem;
+}

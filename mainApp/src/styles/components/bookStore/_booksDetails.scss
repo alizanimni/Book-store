@@ -1,0 +1,75 @@
+.books_data_page {
+  width: 100%;
+
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+  }
+}
+.book_name {
+  font-size: 30px;
+  margin-top: 1rem;
+  text-align: center;
+}
+.auther_name {
+  color: $myBlue;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.summary {
+  font-size: 20px;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 30px 50px;
+  background-color: $myBlack;
+  width: 80%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.add_to_cart {
+  border: none;
+  background-color: $myBlue;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  width: 150px;
+  cursor: pointer;
+}
+.acquired {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(42, 203, 42);
+  width: 120px;
+  height: 60px;
+  cursor: auto;
+}
+.price_details_page {
+    display: inline-block;
+ margin-top: 1rem;
+  font-size: large;
+  color: $myBlue;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+.discount_details_page{
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+    display: inline-block;
+    font-size: large;
+}

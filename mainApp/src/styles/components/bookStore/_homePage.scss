@@ -1,0 +1,163 @@
+.home_page_main{
+    width: 100%;
+    margin-top: 4rem;
+
+
+    h3{
+     padding: 0 1rem;
+    }
+ }
+
+ .books_container{
+  flex-wrap: wrap;
+
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    img{
+        width: 150px;
+        height: 200px;
+        border-radius: 10px;
+    }
+   .book_div{
+      margin:2rem 0.5rem ;
+   
+      padding: 0.5rem;
+      width: 180px;
+      height: 300px;
+      color: white;
+    }
+    .book{
+      height: 40px;
+      font-size: 1rem;
+
+    }
+    .auther{
+      font-size: 0.75rem;
+      font-weight: 400;
+      height: 20px;
+    }
+
+    a:link{
+      text-decoration: none;
+    }
+ }
+     .price{
+      color: $myBlue;
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: inline;
+      margin-right: 20px;
+    }
+    .not-price{
+      text-decoration: line-through;
+    }
+    .discount{
+      display: inline;
+      
+    }
+ .edit_book_button{
+   width: 60px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   color: rgb(0, 0, 0);
+
+
+ }
+ .searchButton{
+  cursor: pointer;
+  margin-right: 1rem;
+ }
+ .center_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_icon_input_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  margin-bottom: 0;
+  background-color: black;
+  height: 60px;
+  width: 50% ;
+  border-radius: 5px;
+}
+.search_input{
+  width:85%;
+  height: 40px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+.search_icon{
+  cursor: pointer;
+
+}
+.books_area{
+  background-color: black;
+  width: 700px;
+  border-radius: 10px;
+}
+.books_container_search{
+
+  img{
+      width: 80px;
+      height: 100px;
+      border-radius: 15px;
+  }
+
+ .book{
+  cursor: pointer;
+  display: flex;   
+  align-items: center;
+  
+  background-color: $myGrey;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 670px;
+    height: 120px;
+    color: white;
+    border-radius: 10px;
+  }
+  .book_details{
+      padding: 1.5rem;
+  }
+}
+.auther{
+  font-size: 14px;
+}
+.search_res_containet{
+  height: min-content;
+  width: 50% ;
+  background-color:rgb(0, 0, 0);
+
+  color: white;
+
+  position: absolute;
+  a:link{
+      text-decoration: none;
+    }
+ }
+ .book_name_search{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 0.7rem;
+  text-align: left;
+  cursor: pointer;
+  color: white;
+ }
+ .add_discount_buttons{
+  margin-top: 1rem;
+   margin-left: 1rem;
+   a{
+     border-bottom: none;    
+   }
+
+ }
+

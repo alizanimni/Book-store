@@ -1,0 +1,100 @@
+.editAdd_container{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.editAdd_modal{
+    margin-top: 6rem;
+     width: 500px;
+     height: 620px;
+     background-color: $myBlack;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.editAdd-form{
+    color: white;
+    width: 400px;
+
+    label{
+        color: white;
+        font-size: 1rem;
+        
+    }
+    h1{
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    h3 {
+        text-align: center;
+        color: $myBlue;
+      }
+    
+      input {
+        display: flex;
+        width: 100%;
+        height:auto;
+        padding: 0.5rem;
+        border: 1px solid $myBlue;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    
+        &:focus {
+          outline: none;
+        }
+
+      }
+    
+      button {
+        display: block;
+        padding: 0.5rem;
+        background: $myBlue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    
+        &:disabled {
+          background: #ccc;
+          cursor: not-allowed;
+        }
+      }
+.summary{
+    height: 200px;
+    width: 400px;
+    margin: 0;
+    background-color: white;
+   font-size: 1rem;
+   padding: 1rem;
+   text-align: left;
+   
+}
+}
+.editAdd__nav {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  
+    div {
+      font-size: 0.75rem;
+      align-self: flex-end;
+      text-decoration: underline;
+      color: $myBlue;
+    }
+  }
+
+
+.invalid-message{
+    width: 250px;
+    color: $myRed;
+    font-size: 0.75rem;
+}
+.priceInput{
+  width: 70px;
+}
