@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-const url ="http://localhost:4000"
+const url ="https://book-store-backend-oo3h.onrender.com"
 
 export const subscribeToSite = async(name,email,adress,password)=>{
     try{
