@@ -2,7 +2,7 @@ import Axios from 'axios'
 import { getUserFromCookie } from '../../cookies/cookies';
 
 //const DB_URL = process.env.REACT_APP_DB;
-const url = "http://localhost:4000"
+const url = "https://book-store-backend-oo3h.onrender.com"
 export const getUser = async (email,password) => {
    try{
      const user=await Axios.get(`${url}/user/get-user?email=${email}&password=${password}`)
