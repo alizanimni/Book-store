@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 
-const port = process.env.port
+const port = process.env.PORT
 
 require('./db/mongoose')
 const userRouter = require('./routers/userRouter')
