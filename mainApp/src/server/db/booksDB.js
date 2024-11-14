@@ -1,7 +1,7 @@
 import Axios from 'axios'
 
 //const DB_URL = process.env.REACT_APP_DB;
-const url = "http://localhost:4000"
+const url = "https://book-store-backend-oo3h.onrender.com"
 
 export const getBooksFromDB = async () => {
    try{
