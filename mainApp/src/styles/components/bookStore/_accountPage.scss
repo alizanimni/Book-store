@@ -9,11 +9,11 @@
 
 }
 .account_modal{
-     width: 400px;
-     height: 370px;
-     background-color: rgb(150, 147, 147);
+     width: 370px;
+     height: 350px;
+     background-color: rgb(194, 193, 193);
      padding: 2rem 3rem;
-     border-radius: 10px; 
+     border-radius: 15px; 
 
      h1{
         text-align: center;
@@ -30,13 +30,20 @@
         border-radius: 10px;
         margin: 0.5rem;
         text-decoration: none;
-        background-color: rgb(28, 28, 65);
-        border: none;
+        background-color: rgb(62, 62, 156);
+        border: 1px solid black;
+
         cursor: pointer;
         margin-top: 2rem;        
      }
+     .account_button:hover{
+      background-color: rgb(46, 46, 120);
+     }
+     .account_button:active{
+      background-color: rgb(38, 38, 103);
+     }
      .delete_account_button{
-        background-color: rgb(150, 147, 147);
+      background-color: rgb(194, 193, 193);
         border: none;
         border-bottom: 1px solid black;
         padding: 0;

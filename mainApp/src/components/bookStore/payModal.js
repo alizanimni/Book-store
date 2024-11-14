@@ -1,14 +1,17 @@
-import React from "react";
-import { useLocation ,Link} from "react-router-dom";
+import React, { useContext } from "react";
+import { Link} from "react-router-dom";
 import { HiX } from "react-icons/hi";
+import { PriceContext } from "../../context/priceContext";
 
 const PayModal = () =>{
-    const location = useLocation();
-    const { cost } = location.state || {}; // Access props from the state object
+
+    const {price}= useContext(PriceContext)
+
   
     const onSubmitPaymentForm =(event)=>{
         event.preventDefault();
 
+      
         const bookData = {
           name: event.target[0].value,
           auther: event.target[1].value,
@@ -65,7 +68,7 @@ const PayModal = () =>{
             <label>Name on card:</label>
             <input></input>
 
-           <label className="amount">Total amount: ${cost}</label>
+           <label className="amount">Total amount: ${price}</label>
           <div className="paymentButton"> <button type="submit">Make Payment</button> </div>           
             </form>        
 <div className="visa_div">
