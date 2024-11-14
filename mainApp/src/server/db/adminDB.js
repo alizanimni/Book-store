@@ -1,9 +1,10 @@
 import Axios from 'axios'
 
+const url = "http://localhost:4000"
 
 export const AdminAddBook = async(bookData)=>{
     try{
-        const res=await Axios.post("http://localhost:4000/add-book",bookData)     
+        const res=await Axios.post("${url}/add-book",bookData)     
         return
       }catch(err){
         console.log(err)
@@ -14,7 +15,7 @@ export const AdminEditBook = async(bookId,bookData)=>{
     console.log(bookId);
     console.log(bookData);
     try{
-        const res = await Axios.patch(`http://localhost:4000/edit-book?id=${bookId}`,bookData)
+        const res = await Axios.patch(`${url}/edit-book?id=${bookId}`,bookData)
         console.log(res)
         return
     }catch(err){
@@ -24,7 +25,7 @@ export const AdminEditBook = async(bookId,bookData)=>{
 
 export const GetAllUsers = async()=>{
     try{
-        const res = await Axios.get(`http://localhost:4000/get-all-users`)
+        const res = await Axios.get(`${url}/get-all-users`)
         const users = []
         for(let user in res.data){
            users.push({

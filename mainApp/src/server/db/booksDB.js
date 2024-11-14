@@ -1,10 +1,11 @@
 import Axios from 'axios'
 
 //const DB_URL = process.env.REACT_APP_DB;
+const url = "http://localhost:4000"
 
 export const getBooksFromDB = async () => {
    try{
-     const res=await Axios.get("http://localhost:4000")
+     const res=await Axios.get(url)
 
     const books=[];
      for(let id in res.data){
@@ -26,7 +27,7 @@ export const getBooksFromDB = async () => {
 
 export const getBooksByIdFromDB = async (id) => {
   try{
-    const book=await Axios.get(`http://localhost:4000/books/find-book?id=${id}`)
+    const book=await Axios.get(`${url}/books/find-book?id=${id}`)
     if(!book){
         throw new Error("Book not found")
     }
@@ -39,7 +40,7 @@ export const getBooksByIdFromDB = async (id) => {
 
 export const getBooksByAutherName = async (auther) => {
   try{
-    const books=await Axios.get(`http://localhost:4000/books/find-auther-books?auther=${auther}`)
+    const books=await Axios.get(`${url}/books/find-auther-books?auther=${auther}`)
     if(!books){
         throw new Error("Auther not found")
     }

@@ -1,9 +1,11 @@
 import Axios from "axios";
 
+const url ="http://localhost:4000"
+
 export const subscribeToSite = async(name,email,adress,password)=>{
     try{
         console.log(name,email,password);
-    const res = await Axios.post("http://localhost:4000/add-user", {name,email,adress,password})
+    const res = await Axios.post(`${url}/add-user`, {name,email,adress,password})
     console.log(res)
     }catch(err){
       console.log(err.response.data.message);

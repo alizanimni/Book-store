@@ -2,10 +2,10 @@ import Axios from 'axios'
 import { getUserFromCookie } from '../../cookies/cookies';
 
 //const DB_URL = process.env.REACT_APP_DB;
-
+const url = "http://localhost:4000"
 export const getUser = async (email,password) => {
    try{
-     const user=await Axios.get(`http://localhost:4000/user/get-user?email=${email}&password=${password}`)
+     const user=await Axios.get(`${url}/user/get-user?email=${email}&password=${password}`)
      console.log(user);
       if(!user.data){
 
@@ -24,7 +24,7 @@ export const addBookToCart = async(bookId)=>{
   const user = getUserFromCookie()
     console.log(user);
   try{
-    await Axios.patch(`http://localhost:4000/user/add-book`,{userId:user._id,bookId})
+    await Axios.patch(`${url}/user/add-book`,{userId:user._id,bookId})
     return
   }catch(err){
     console.log(err)
@@ -36,7 +36,7 @@ export const deleteBookFromCart = async(bookId)=>{
   const user = getUserFromCookie()
     console.log(user);
   try{
-    await Axios.patch(`http://localhost:4000/user/delete-book`,{userId:user._id,bookId})
+    await Axios.patch(`${url}/user/delete-book`,{userId:user._id,bookId})
     return
   }catch(err){
     console.log(err)
@@ -45,7 +45,7 @@ export const deleteBookFromCart = async(bookId)=>{
 
 export const getUserById = async(id)=>{
   try{
-    const user=await Axios.get(`http://localhost:4000/user/get-user-By-id?id=${id}`)
+    const user=await Axios.get(`${url}/user/get-user-By-id?id=${id}`)
     console.log(user);
      if(!user.data){
 
@@ -65,7 +65,7 @@ export const editUserDetails = async(userNewData)=>{
   console.log(user);
     console.log(user);
   try{
-    await Axios.patch(`http://localhost:4000/user/edit-details?id=${user._id}`,userNewData)
+    await Axios.patch(`${url}/user/edit-details?id=${user._id}`,userNewData)
     return
   }catch(err){
     console.log(err)
@@ -74,7 +74,7 @@ export const editUserDetails = async(userNewData)=>{
 
 export const deleteUser = async(id)=>{
   try{
-    await Axios.delete(`http://localhost:4000/user/delete-user?id=${id}`)
+    await Axios.delete(`${url}/user/delete-user?id=${id}`)
   }catch(err){
     console.log(err)
   }
